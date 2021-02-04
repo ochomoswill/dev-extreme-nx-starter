@@ -24,6 +24,7 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
+    "commit": "npx git-cz",
     "prepush": "standard-version",
     "push": "git push --follow-tags origin $npm_config_target_branch"
   },

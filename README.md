@@ -2,11 +2,10 @@
 
 # DevExtremeNxStarter
 
-A simple project that with Dev Extreme set up. This project was generated using [Nx](https://nx.dev).
-
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
-
-
+A simple monorepo project set up using [Nx](https://nx.dev). The project also has:
+* [Dev Extreme React Framework](https://js.devexpress.com/Demos/WidgetsGallery/) integrated (also on Storybook)
+* commit linting
+* semantic versioning
 
 ## Nx Commands
 
@@ -71,25 +70,32 @@ Visit the [Nx Documentation](https://nx.dev) to learn more.
 ## Version Control Workflow
 
 
-Add changes on code using:
-```
-git add .
-```
+1. Add changes on code using:
+    ```bash
+    git add .
+    ```
 
-Provide commit message for changes:
-```
-git commit -m '[COMMIT-MESSAGE]'
-```
+2. Provide commit message for changes:
+    ```bash
+    git commit -m '[COMMIT-MESSAGE]'
+    ```
 
-the commit messages should be in present tense. e.g fix: undo request log function.
+    or 
+    
+    ```bash
+    npm run commit
+    ```
+    The latter command initializes a cli that prompts you for details that build up your commit message. 
+    
+    The commit messages should be in present tense. e.g fix: undo request log function.
 
-Push changes to your repository:
-```
-npm run push
-```
-the above command includes bumping up the version based on the commit type
+3. Push changes to your repository:
+    ```bash
+    npm run push
+    ```
+    the above command includes bumping up the version based on the commit type
 
-fix - patch
-feat - minor
-BREAKING CHANGES - major
+    * fix - patch
+    * feat - minor
+    * BREAKING CHANGES - major
 
