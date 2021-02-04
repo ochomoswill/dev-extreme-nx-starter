@@ -1,6 +1,6 @@
 {
   "name": "dev-extreme-nx-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "nx": "nx",
@@ -24,7 +24,7 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "release" : "standard-version"
+    "release": "standard-version"
   },
   "private": true,
   "dependencies": {
