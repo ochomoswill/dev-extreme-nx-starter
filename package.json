@@ -24,7 +24,8 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "release": "standard-version"
+    "prevscpush": "standard-version",
+    "vcspush": "git push --follow-tags origin $npm_config_target_branch"
   },
   "private": true,
   "dependencies": {
