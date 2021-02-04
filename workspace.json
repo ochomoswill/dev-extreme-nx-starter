@@ -131,6 +131,64 @@
             "jestConfig": "libs/playground/jest.config.js",
             "passWithNoTests": true
           }
+        },
+        "storybook": {
+          "executor": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/playground/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "executor": "@nrwl/storybook:build",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "outputPath": "dist/storybook/playground",
+            "config": {
+              "configFolder": "libs/playground/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        }
+      }
+    },
+    "playground-e2e": {
+      "root": "apps/playground-e2e",
+      "sourceRoot": "apps/playground-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/playground-e2e/cypress.json",
+            "tsConfig": "apps/playground-e2e/tsconfig.e2e.json",
+            "devServerTarget": "playground:storybook"
+          },
+          "configurations": {
+            "ci": {
+              "devServerTarget": "playground:storybook:ci"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/playground-e2e/**/*.{js,ts}"
+            ]
+          }
         }
       }
     }
