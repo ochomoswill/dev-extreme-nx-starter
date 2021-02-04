@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/ochomoswill/dev-extreme-nx-starter/compare/v0.0.1...v0.0.2) (2021-02-04)
+
+
+### Bug Fixes
+
+* add versioning and vcs push scripts ([dd1e2f6](https://github.com/ochomoswill/dev-extreme-nx-starter/commit/dd1e2f6a9ffa7720247e5b385357aba216c1c4c8))
+* attempt 2 at add versioning and vcs push scripts ([11b86b2](https://github.com/ochomoswill/dev-extreme-nx-starter/commit/11b86b296b9352c1fcb6e0d3bcacbeb279105678))
+
 ### 0.0.1 (2021-02-04)
 
 
